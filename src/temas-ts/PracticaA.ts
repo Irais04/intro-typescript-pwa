@@ -28,19 +28,19 @@ export class Multiplicar{
 
     calcular():void{
 
-        let total: number=0
-        let text: string= '';
+        let total: number=0;
+        let repetir: string= '';
 
         for(let i = 0; i< this.cantidad; i++){
-            if (i == (this.cantidad - 1)){
-                text+= `${this.numeroBase} `;
+            if (i == (this.cantidad)){
+                repetir+= `${this.numeroBase} `;
             }
             else{
-                text+= `${this.numeroBase} + `;
+                repetir+= ` ${this.numeroBase} +`;
             }
             total+= this.numeroBase
         }
-        console.log(` ${text}= ${total}`);
+        console.log(` ${repetir}= ${total}`);
     }
 }
 
