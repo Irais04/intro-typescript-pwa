@@ -1,10 +1,9 @@
+import { Multiplicar } from "./PracticaA";
 
-import { Multi } from "./PracticaA";
-let sumas = new Multi();
-
-sumas.setNumeroBase(4)
-sumas.setNumero2(3)
-sumas.Resultado()
+let suma1 = new Multiplicar();
+suma1.setNumero1(1);
+suma1.setCantidad(5);
+suma1.calcular();
 
 
 

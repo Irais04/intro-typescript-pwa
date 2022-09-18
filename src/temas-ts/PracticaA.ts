@@ -7,29 +7,40 @@ privado y publico
 archivo a clase 
 archivo b Importar */
 
-export class Multi{
-    private numeroBase:number;
-    private numero2:number;
-    private total:number;
+export class Multiplicar{
+    private numeroBase: number;
+    private cantidad: number;
 
-    setNumeroBase(num:number){
-        this.numeroBase= num;
+    setNumero1(a:number){
+        this.numeroBase = a;
     }
-    setNumero2(num2:number){
-        this.numero2= num2;
-    }
-   
-    private suma():number{
 
-       let total =0
-        for(let i=1; i<=this.numero2; i++){
-            total+=this.numeroBase
+    getNumero1():number{
+        return this.numeroBase;
+    }
+
+    setCantidad(b:number){
+        this.cantidad= b;
+    }
+    getCantidad():number{
+        return this.cantidad;
+    }
+
+    calcular():void{
+
+        let total: number=0
+        let text: string= '';
+
+        for(let index = 0; index< this.cantidad; index++){
+            if (index == (this.cantidad - 1)){
+                text+= `${this.numeroBase} `;
+            }
+            else{
+                text+= `${this.numeroBase} + `;
+            }
+            total+= this.numeroBase
         }
-        return total
-    }
-    Resultado():void{
-        console.log(this.suma());
+        console.log(` ${text}= ${total}`);
     }
 }
-
 
