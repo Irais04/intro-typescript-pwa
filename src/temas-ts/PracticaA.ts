@@ -31,8 +31,8 @@ export class Multiplicar{
         let total: number=0
         let text: string= '';
 
-        for(let index = 0; index< this.cantidad; index++){
-            if (index == (this.cantidad - 1)){
+        for(let i = 0; i< this.cantidad; i++){
+            if (i == (this.cantidad - 1)){
                 text+= `${this.numeroBase} `;
             }
             else{
